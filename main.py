@@ -13,5 +13,5 @@ def data():
     if request.method == 'POST':
         form_data = request.form
         return render_template('data.html',form_data = form_data)
-
-app.run(host='localhost', port=5000)
+app.run(host='0.0.0.0', port=81)
+#app.run(host='localhost', port=5000)
